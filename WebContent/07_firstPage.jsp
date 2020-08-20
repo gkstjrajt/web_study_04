@@ -11,5 +11,8 @@
 	System.out.println("하나의 요청 속성 : " + request.getAttribute("name"));
 	System.out.println("하나의 세션 속성 : " + session.getAttribute("name"));
 	System.out.println("하나의 애플리케이션 속성 : " + application.getAttribute("name"));
-	request.getRequestDispatcher("07_secondPage.jsp").forward(request, response);
+	
+//	request.getRequestDispatcher("07_secondPage.jsp").forward(request, response);
 %>
+
+<jsp:forward page="07_secondPage.jsp"/>
